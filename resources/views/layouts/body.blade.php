@@ -92,8 +92,9 @@
                 <div class="card-body" style="background-image: url('../assets/images/layout/nav-card-bg.svg')">
                     <h5 class="text-dark">Help Center</h5>
                     <p class="text-dark text-opacity-75">Please contact us for more questions.</p>
-                    <a href="https://phoenixcoded.support-hub.io/" class="btn btn-primary" target="_blank">Go to
-                        help Center</a>
+                    <a href="#" class="btn btn-primary" target="_blank">
+                        Go to help Center
+                    </a>
                 </div>
             </div>
         </div>
@@ -130,18 +131,6 @@
                                     </li>
                                     <li>
                                         <a class="pc-user-links">
-                                            <i class="ph-duotone ph-gear"></i>
-                                            <span>Settings</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="pc-user-links">
-                                            <i class="ph-duotone ph-lock-key"></i>
-                                            <span>Lock Screen</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="pc-user-links">
                                             <i class="ph-duotone ph-power"></i>
                                             <span>Logout</span>
                                         </a>
@@ -172,29 +161,6 @@
                         <i class="ti ti-menu-2"></i>
                     </a>
                 </li>
-                <li class="dropdown pc-h-item d-inline-flex d-md-none">
-                    <a class="pc-head-link dropdown-toggle arrow-none m-0" data-bs-toggle="dropdown" href="#"
-                        role="button" aria-haspopup="false" aria-expanded="false">
-                        <i class="ph-duotone ph-magnifying-glass"></i>
-                    </a>
-                    <div class="dropdown-menu pc-h-dropdown drp-search">
-                        <form class="px-3">
-                            <div class="mb-0 d-flex align-items-center">
-                                <input type="search" class="form-control border-0 shadow-none"
-                                    placeholder="Search..." />
-                                <button class="btn btn-light-secondary btn-search">Search</button>
-                            </div>
-                        </form>
-                    </div>
-                </li>
-                <li class="pc-h-item d-none d-md-inline-flex">
-                    <form class="form-search">
-                        <i class="ph-duotone ph-magnifying-glass icon-search"></i>
-                        <input type="search" class="form-control" placeholder="Search..." />
-
-                        <button class="btn btn-search" style="padding: 0"><kbd>ctrl+k</kbd></button>
-                    </form>
-                </li>
             </ul>
         </div>
         <!-- [Mobile Media Block end] -->
@@ -210,40 +176,29 @@
                             <div class="qta-links m-n1">
                                 <a href="#!" class="dropdown-item">
                                     <i class="ph-duotone ph-shopping-cart"></i>
-                                    <span>E-commerce</span>
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                    <i class="ph-duotone ph-lifebuoy"></i>
-                                    <span>Helpdesk</span>
+                                    <span>Transcation</span>
                                 </a>
                                 <a href="#!" class="dropdown-item">
                                     <i class="ph-duotone ph-scroll"></i>
                                     <span>Invoice</span>
                                 </a>
                                 <a href="#!" class="dropdown-item">
-                                    <i class="ph-duotone ph-books"></i>
-                                    <span>Online Courses</span>
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                    <i class="ph-duotone ph-envelope-open"></i>
-                                    <span>Mail</span>
-                                </a>
-                                <a href="#!" class="dropdown-item">
                                     <i class="ph-duotone ph-identification-badge"></i>
                                     <span>Membership</span>
                                 </a>
                                 <a href="#!" class="dropdown-item">
-                                    <i class="ph-duotone ph-chats-circle"></i>
-                                    <span>Chat</span>
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                    <i class="ph-duotone ph-currency-circle-dollar"></i>
-                                    <span>Plans</span>
+                                    <i class="ph-duotone ph-money"></i>
+                                    <span>Promo</span>
                                 </a>
                                 <a href="#!" class="dropdown-item">
                                     <i class="ph-duotone ph-user-circle"></i>
                                     <span>Users</span>
                                 </a>
+                                <a href="#!" class="dropdown-item">
+                                    <i class="ph-duotone ph-gear"></i>
+                                    <span>Settings</span>
+                                </a>
+
                             </div>
                         </div>
                     </div>
@@ -251,62 +206,8 @@
                 <li class="dropdown pc-h-item">
                     <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
                         role="button" aria-haspopup="false" aria-expanded="false">
-                        <i class="ph-duotone ph-sun-dim"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-end pc-h-dropdown">
-                        <a href="#!" class="dropdown-item" onclick="layout_change('dark')">
-                            <i class="ph-duotone ph-moon"></i>
-                            <span>Dark</span>
-                        </a>
-                        <a href="#!" class="dropdown-item" onclick="layout_change('light')">
-                            <i class="ph-duotone ph-sun-dim"></i>
-                            <span>Light</span>
-                        </a>
-                        <a href="#!" class="dropdown-item" onclick="layout_change_default()">
-                            <i class="ph-duotone ph-cpu"></i>
-                            <span>Default</span>
-                        </a>
-                    </div>
-                </li>
-                <li class="pc-h-item">
-                    <a class="pc-head-link pct-c-btn" href="#" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvas_pc_layout">
-                        <i class="ph-duotone ph-gear-six"></i>
-                    </a>
-                </li>
-                <li class="dropdown pc-h-item">
-                    <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
-                        role="button" aria-haspopup="false" aria-expanded="false">
-                        <i class="ph-duotone ph-diamonds-four"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-end pc-h-dropdown">
-                        <a href="#!" class="dropdown-item">
-                            <i class="ph-duotone ph-user"></i>
-                            <span>My Account</span>
-                        </a>
-                        <a href="#!" class="dropdown-item">
-                            <i class="ph-duotone ph-gear"></i>
-                            <span>Settings</span>
-                        </a>
-                        <a href="#!" class="dropdown-item">
-                            <i class="ph-duotone ph-lifebuoy"></i>
-                            <span>Support</span>
-                        </a>
-                        <a href="#!" class="dropdown-item">
-                            <i class="ph-duotone ph-lock-key"></i>
-                            <span>Lock Screen</span>
-                        </a>
-                        <a href="#!" class="dropdown-item">
-                            <i class="ph-duotone ph-power"></i>
-                            <span>Logout</span>
-                        </a>
-                    </div>
-                </li>
-                <li class="dropdown pc-h-item">
-                    <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
-                        role="button" aria-haspopup="false" aria-expanded="false">
                         <i class="ph-duotone ph-bell"></i>
-                        <span class="badge bg-success pc-h-badge">3</span>
+                        <span class="badge bg-danger pc-h-badge">3</span>
                     </a>
                     <div class="dropdown-menu dropdown-notification dropdown-menu-end pc-h-dropdown">
                         <div class="dropdown-header d-flex align-items-center justify-content-between">
@@ -474,13 +375,9 @@
                         </div>
                         <div class="dropdown-footer">
                             <div class="row g-3">
-                                <div class="col-6">
-                                    <div class="d-grid"><button class="btn btn-primary">Archive all</button>
+                                <div class="col-12">
+                                    <div class="d-grid"><button class="btn btn-primary">See More</button>
                                     </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="d-grid"><button class="btn btn-outline-secondary">Mark all as
-                                            read</button></div>
                                 </div>
                             </div>
                         </div>
@@ -520,73 +417,6 @@
                                                 <span>Change password</span>
                                             </span>
                                         </a>
-                                        <a href="#" class="dropdown-item">
-                                            <span class="d-flex align-items-center">
-                                                <i class="ph-duotone ph-envelope-simple"></i>
-                                                <span>Recently mail</span>
-                                            </span>
-                                            <div class="user-group">
-                                                <img src="../assets/images/user/avatar-1.jpg" alt="user-image"
-                                                    class="avtar" />
-                                                <img src="../assets/images/user/avatar-2.jpg" alt="user-image"
-                                                    class="avtar" />
-                                                <img src="../assets/images/user/avatar-3.jpg" alt="user-image"
-                                                    class="avtar" />
-                                            </div>
-                                        </a>
-                                        <a href="#" class="dropdown-item">
-                                            <span class="d-flex align-items-center">
-                                                <i class="ph-duotone ph-calendar-blank"></i>
-                                                <span>Schedule meetings</span>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#" class="dropdown-item">
-                                            <span class="d-flex align-items-center">
-                                                <i class="ph-duotone ph-heart"></i>
-                                                <span>Favorite</span>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="dropdown-item">
-                                            <span class="d-flex align-items-center">
-                                                <i class="ph-duotone ph-arrow-circle-down"></i>
-                                                <span>Download</span>
-                                            </span>
-                                            <span class="avtar avtar-xs rounded-circle bg-danger text-white">10</span>
-                                        </a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="dropdown-item">
-                                            <span class="d-flex align-items-center">
-                                                <i class="ph-duotone ph-globe-hemisphere-west"></i>
-                                                <span>Languages</span>
-                                            </span>
-                                            <span class="flex-shrink-0">
-                                                <select
-                                                    class="form-select bg-transparent form-select-sm border-0 shadow-none">
-                                                    <option value="1">English</option>
-                                                    <option value="2">Spain</option>
-                                                    <option value="3">Arbic</option>
-                                                </select>
-                                            </span>
-                                        </div>
-                                        <a href="#" class="dropdown-item">
-                                            <span class="d-flex align-items-center">
-                                                <i class="ph-duotone ph-flag"></i>
-                                                <span>Country</span>
-                                            </span>
-                                        </a>
-                                        <div class="dropdown-item">
-                                            <span class="d-flex align-items-center">
-                                                <i class="ph-duotone ph-moon"></i>
-                                                <span>Dark mode</span>
-                                            </span>
-                                            <div class="form-check form-switch form-check-reverse m-0">
-                                                <input class="form-check-input f-18" id="dark-mode" type="checkbox"
-                                                    onclick="dark_mode()" role="switch" />
-                                            </div>
-                                        </div>
                                     </li>
                                     <li class="list-group-item">
                                         <a href="#" class="dropdown-item">
@@ -597,32 +427,12 @@
                                         </a>
                                         <a href="#" class="dropdown-item">
                                             <span class="d-flex align-items-center">
-                                                <i class="ph-duotone ph-star text-warning"></i>
-                                                <span>Upgrade account</span>
-                                                <span
-                                                    class="badge bg-light-success border border-success ms-2">NEW</span>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="dropdown-item">
-                                            <span class="d-flex align-items-center">
                                                 <i class="ph-duotone ph-bell"></i>
                                                 <span>Notifications</span>
                                             </span>
                                         </a>
-                                        <a href="#" class="dropdown-item">
-                                            <span class="d-flex align-items-center">
-                                                <i class="ph-duotone ph-gear-six"></i>
-                                                <span>Settings</span>
-                                            </span>
-                                        </a>
                                     </li>
                                     <li class="list-group-item">
-                                        <a href="#" class="dropdown-item">
-                                            <span class="d-flex align-items-center">
-                                                <i class="ph-duotone ph-plus-circle"></i>
-                                                <span>Add account</span>
-                                            </span>
-                                        </a>
                                         <a href="#" class="dropdown-item">
                                             <span class="d-flex align-items-center">
                                                 <i class="ph-duotone ph-power"></i>
