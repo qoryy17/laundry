@@ -3,7 +3,7 @@
 <!-- [Head] start -->
 
 <head>
-    <title>Sample Page | Light Able Admin & Dashboard Template</title>
+    <title>{{ $title }}</title>
     <!-- [Meta] -->
     <x-meta-component />
 
