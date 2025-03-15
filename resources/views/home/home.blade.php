@@ -18,7 +18,7 @@
                         </div>
                         <div class="col-md-12">
                             <div class="page-header-title">
-                                <h2 class="mb-0">{{ $pageTitle }}</h2>
+                                <h2 class="mb-2 mt-2">{{ $pageTitle }}</h2>
                             </div>
                         </div>
                     </div>
@@ -31,7 +31,8 @@
                 <div class="col-lg-6">
                     <div class="card statistics-card-1">
                         <div class="card-body">
-                            <img src="../assets/images/widget/img-status-3.svg" alt="img" class="img-fluid img-bg">
+                            <img src="{{ asset('assets/images/widget/img-status-3.svg') }}" alt="img"
+                                class="img-fluid img-bg">
                             <div class="d-flex align-items-center">
                                 <div class="avtar bg-brand-color-4 text-white me-3">
                                     <i class="ph-duotone ph-currency-dollar f-26"></i>
@@ -49,7 +50,8 @@
                 <div class="col-lg-6">
                     <div class="card statistics-card-1">
                         <div class="card-body">
-                            <img src="../assets/images/widget/img-status-3.svg" alt="img" class="img-fluid img-bg">
+                            <img src="{{ asset('assets/images/widget/img-status-3.svg') }}" alt="img"
+                                class="img-fluid img-bg">
                             <div class="d-flex align-items-center">
                                 <div class="avtar bg-brand-color-4 text-white me-3">
                                     <i class="ph-duotone ph-currency-dollar f-26"></i>
@@ -67,7 +69,8 @@
                 <div class="col-lg-6">
                     <div class="card statistics-card-1">
                         <div class="card-body">
-                            <img src="../assets/images/widget/img-status-3.svg" alt="img" class="img-fluid img-bg">
+                            <img src="{{ asset('assets/images/widget/img-status-3.svg') }}" alt="img"
+                                class="img-fluid img-bg">
                             <div class="d-flex align-items-center">
                                 <div class="avtar bg-brand-color-4 text-white me-3">
                                     <i class="ph-duotone ph-shopping-cart-simple f-26"></i>
@@ -85,7 +88,8 @@
                 <div class="col-lg-6">
                     <div class="card statistics-card-1">
                         <div class="card-body">
-                            <img src="../assets/images/widget/img-status-3.svg" alt="img" class="img-fluid img-bg">
+                            <img src="{{ asset('assets/images/widget/img-status-3.svg') }}" alt="img"
+                                class="img-fluid img-bg">
                             <div class="d-flex align-items-center">
                                 <div class="avtar bg-brand-color-4 text-white me-3">
                                     <i class="ph-duotone ph-users f-26"></i>
@@ -278,14 +282,14 @@
     <script src="{{ asset('assets/js/plugins/apexcharts.min.js') }}"></script>
     <script>
         'use strict';
-        document.addEventListener('DOMContentLoaded', function() {
-            setTimeout(function() {
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(function () {
                 floatchart();
             }, 500);
         });
 
         function floatchart() {
-            (function() {
+            (function () {
                 var options = {
                     chart: {
                         type: 'area',

@@ -4,6 +4,6 @@ namespace App\Enum;
 
 enum RoleEnum: string
 {
-    case Owner = 'Owner';
+    case OWNER = 'Owner';
     case EMPLOYEE = 'Employee';
 }

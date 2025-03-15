@@ -17,7 +17,7 @@ class DashboardController extends Controller
 
         $data = [
             'title' => 'Dashboard Laundry Management System',
-            'pageTitle' => ConfigTime::time() . ' Elia ',
+            'pageTitle' => ConfigTime::time() . ' Sarah ',
             'breadCumbs' => $breadCumbs
         ];
 

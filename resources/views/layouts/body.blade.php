@@ -1,5 +1,27 @@
 @include('layouts.header')
-
+@if (session()->has('success'))
+    <script>
+        'use strict';
+        window.onload = function () {
+            Swal.fire({
+                icon: "success",
+                title: "Notification",
+                text: "{{ session('success') }}"
+            });
+        }
+    </script>
+@elseif (session()->has('error'))
+    <script>
+        'use strict';
+        window.onload = function () {
+            Swal.fire({
+                icon: "error",
+                title: "Notification",
+                text: "{{ session('error') }}"
+            });
+        }
+    </script>
+@endif
 <!-- [ Pre-loader ] start -->
 <div class="loader-bg">
     <div class="loader-track">
@@ -29,7 +51,7 @@
                     </a>
                 </li>
                 <li class="pc-item">
-                    <a href="" class="pc-link">
+                    <a href="{{ route('users.index') }}" class="pc-link">
                         <span class="pc-micon">
                             <i class="ti ti-users"></i>
                         </span>
@@ -89,7 +111,8 @@
                 </li>
             </ul>
             <div class="card nav-action-card bg-brand-color-4">
-                <div class="card-body" style="background-image: url('../assets/images/layout/nav-card-bg.svg')">
+                <div class="card-body"
+                    style="background-image: url('{{ asset('assets/images/layout/nav-card-bg.svg') }}')">
                     <h5 class="text-dark">Help Center</h5>
                     <p class="text-dark text-opacity-75">Please contact us for more questions.</p>
                     <a href="#" class="btn btn-primary" target="_blank">
@@ -102,7 +125,7 @@
             <div class="card-body">
                 <div class="d-flex align-items-center">
                     <div class="flex-shrink-0">
-                        <img src="../assets/images/user/avatar-1.jpg" alt="user-image"
+                        <img src="{{ asset('assets/images/user/avatar-1.jpg') }}" alt="user-image"
                             class="user-avtar wid-45 rounded-circle" />
                     </div>
                     <div class="flex-grow-1 ms-3">
@@ -227,7 +250,7 @@
                                     <p class="text-span">Today</p>
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
-                                            <img src="../assets/images/user/avatar-2.jpg" alt="user-image"
+                                            <img src="{{ asset('assets/images/user/avatar-2.jpg') }}" alt="user-image"
                                                 class="user-avtar avtar avtar-s" />
                                         </div>
                                         <div class="flex-grow-1 ms-3">
@@ -326,7 +349,7 @@
                                 <li class="list-group-item">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
-                                            <img src="../assets/images/user/avatar-2.jpg" alt="user-image"
+                                            <img src="{{ asset('assets/images/user/avatar-2.jpg') }}" alt="user-image"
                                                 class="user-avtar avtar avtar-s" />
                                         </div>
                                         <div class="flex-grow-1 ms-3">
@@ -386,7 +409,7 @@
                 <li class="dropdown pc-h-item header-user-profile">
                     <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
                         role="button" aria-haspopup="false" data-bs-auto-close="outside" aria-expanded="false">
-                        <img src="../assets/images/user/avatar-2.jpg" alt="user-image" class="user-avtar" />
+                        <img src="{{ asset('assets/images/user/avatar-2.jpg') }}" alt="user-image" class="user-avtar" />
                     </a>
                     <div class="dropdown-menu dropdown-user-profile dropdown-menu-end pc-h-dropdown">
                         <div class="dropdown-header d-flex align-items-center justify-content-between">
@@ -399,13 +422,13 @@
                                     <li class="list-group-item">
                                         <div class="d-flex align-items-center">
                                             <div class="flex-shrink-0">
-                                                <img src="../assets/images/user/avatar-2.jpg" alt="user-image"
-                                                    class="wid-50 rounded-circle" />
+                                                <img src="{{ asset('assets/images/user/avatar-2.jpg') }}"
+                                                    alt="user-image" class="wid-50 rounded-circle" />
                                             </div>
                                             <div class="flex-grow-1 mx-3">
-                                                <h5 class="mb-0">Carson Darrin</h5>
+                                                <h5 class="mb-0">Qori Chairawan</h5>
                                                 <a class="link-primary"
-                                                    href="mailto:carson.darrin@company.io">carson.darrin@company.io</a>
+                                                    href="mailto:qorichairawan17@gmail.com">qorichairawan17@gmail.com</a>
                                             </div>
                                             <span class="badge bg-primary">PRO</span>
                                         </div>
