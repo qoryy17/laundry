@@ -67,18 +67,19 @@
                                             <a href="#" class="avtar avtar-xs btn-light-secondary">
                                                 <i class="ti ti-edit f-20"></i>
                                             </a>
-                                            <a href="#" class="avtar avtar-xs btn-light-secondary" onclick=" Swal.fire({
-                                                            icon: 'warning',
-                                                            title: 'Hapus Data ?',
-                                                            text: 'Data yang dihapus tidak dapat dikembalikan !',
-                                                            showCancelButton: true,
-                                                            confirmButtonText: 'Hapus',
-                                                            cancelButtonText: 'Batal',
-                                                        }).then((result) => {
-                                                            if (result.isConfirmed) {
-                                                                document.getElementById('deleteForm').submit();
-                                                            }
-                                                        });">
+                                            <a href="#" class="avtar avtar-xs btn-light-secondary"
+                                                onclick=" Swal.fire({
+                                                    icon: 'warning',
+                                                    title: 'Hapus Data ?',
+                                                    text: 'Data yang dihapus tidak dapat dikembalikan !',
+                                                    showCancelButton: true,
+                                                    confirmButtonText: 'Hapus',
+                                                    cancelButtonText: 'Batal',
+                                                    }).then((result) => {
+                                                        if (result.isConfirmed) {
+                                                            document.getElementById('deleteForm').submit();
+                                                        }
+                                                    });">
                                                 <i class="ti ti-trash f-20"></i>
                                             </a>
                                             <form id="deleteForm" action="" method="POST">

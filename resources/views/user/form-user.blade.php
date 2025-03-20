@@ -47,18 +47,18 @@
                         @endif
                         <div class="form-group mb-3">
                             <label class="form-label" for="name">Name <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="name" name="name" required placeholder="Username..."
-                                value="{{ $user ? $user->name : old('name') }}">
+                            <input type="text" class="form-control" id="name" name="name" required
+                                placeholder="Username..." value="{{ $user ? $user->name : old('name') }}">
                             @error('name')
-                                <small class="text-danger">{{ $error }}</small>
+                                <small class="text-danger">{{ $message }}</small>
                             @enderror
                         </div>
                         <div class="form-group mb-3">
                             <label class="form-label" for="email">Email <span class="text-danger">*</span></label>
-                            <input type="email" class="form-control" id="email" name="email" required placeholder="Email..."
-                                value="{{ $user ? $user->email : old('email') }}">
+                            <input type="email" class="form-control" id="email" name="email" required
+                                placeholder="Email..." value="{{ $user ? $user->email : old('email') }}">
                             @error('email')
-                                <small class="text-danger">{{ $error }}</small>
+                                <small class="text-danger">{{ $message }}</small>
                             @enderror
                         </div>
                         <div class="form-group mb-3">
@@ -67,47 +67,52 @@
                                 placeholder="Password..." value="">
                             <small>Leave password it's blank if you don't want to change...</small>
                             @error('password')
-                                <small class="text-danger">{{ $error }}</small>
+                                <small class="text-danger">{{ $message }}</small>
                             @enderror
                         </div>
                         <div class="form-group mb-3">
                             <label class="form-label" for="role">Role <span class="text-danger">*</span></label>
                             <select name="role" id="role" name="role" class="form-control" required>
                                 <option value="">-- Select Role --</option>
-                                <option value="{{ \App\Enum\RoleEnum::OWNER->value }}" @if($user && $user->role === \App\Enum\RoleEnum::OWNER->value) selected
+                                <option value="{{ \App\Enum\RoleEnum::OWNER->value }}"
+                                    @if ($user && $user->role === \App\Enum\RoleEnum::OWNER->value) selected
                                 @elseif(old('role') === \App\Enum\RoleEnum::OWNER->value) selected @endif>
                                     {{ \App\Enum\RoleEnum::OWNER->value }}
                                 </option>
-                                <option value="{{ \App\Enum\RoleEnum::EMPLOYEE->value }}" @if($user && $user->role === \App\Enum\RoleEnum::EMPLOYEE->value) selected
+                                <option value="{{ \App\Enum\RoleEnum::EMPLOYEE->value }}"
+                                    @if ($user && $user->role === \App\Enum\RoleEnum::EMPLOYEE->value) selected
                                 @elseif(old('role') === \App\Enum\RoleEnum::OWNER->value) selected @endif>
                                     {{ \App\Enum\RoleEnum::EMPLOYEE->value }}
                                 </option>
                             </select>
                             @error('role')
-                                <small class="text-danger">{{ $error }}</small>
+                                <small class="text-danger">{{ $message }}</small>
                             @enderror
                         </div>
                         <div class="form-group mb-3">
                             <label class="form-label" for="active">Active <span class="text-danger">*</span></label>
                             <select name="active" id="active" name="active" class="form-control" required>
                                 <option value="">-- Select Active --</option>
-                                <option value="Yes" @if ($user && $user->active == 'Yes') selected @elseif (old('active') == 'Yes') selected @endif>
+                                <option value="Yes"
+                                    @if ($user && $user->active == 'Yes') selected @elseif (old('active') == 'Yes') selected @endif>
                                     Yes (Active)
                                 </option>
-                                <option value="No" @if ($user && $user->active == 'No') selected @elseif (old('active') == 'No')
+                                <option value="No"
+                                    @if ($user && $user->active == 'No') selected @elseif (old('active') == 'No')
                                 selected @endif>
                                     No (Deactive)
                                 </option>
                             </select>
                             @error('active')
-                                <small class="text-danger">{{ $error }}</small>
+                                <small class="text-danger">{{ $message }}</small>
                             @enderror
                         </div>
                         <div class="form-group mb-3">
                             <label class="form-label" for="photo">Photo Profile</label>
-                            <input type="file" class="form-control" id="photo" name="photo" accept="image/*" required>
+                            <input type="file" class="form-control" id="photo" name="photo" accept="image/*"
+                                required>
                             @error('photo')
-                                <small class="text-danger">{{ $error }}</small>
+                                <small class="text-danger">{{ $message }}</small>
                             @enderror
                         </div>
                         <div class="form-group">
@@ -115,7 +120,7 @@
                             <input type="text" class="form-control" id="phone" name="phone" required
                                 placeholder="Phone Number....">
                             @error('phone')
-                                <small class="text-danger">{{ $error }}</small>
+                                <small class="text-danger">{{ $message }}</small>
                             @enderror
                         </div>
                     </div>
