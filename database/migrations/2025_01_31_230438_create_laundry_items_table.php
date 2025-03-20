@@ -14,6 +14,7 @@ return new class extends Migration {
             $table->id();
             $table->string('item_code');
             $table->text('item_name');
+            $table->integer('price_weight');
             $table->timestamps();
         });
     }

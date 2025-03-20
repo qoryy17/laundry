@@ -16,8 +16,8 @@ return new class extends Migration {
             $table->unsignedBigInteger('membership_id')->nullable()->comment("If customer it's member");
             $table->unsignedBigInteger('promo_service_id')->nullable()->comment("If customer use promo service");
             $table->string('customer_name');
-            $table->unsignedBigInteger('laundry_item_code');
             $table->integer('employee_by');
+            $table->enum('status', ['Waiting', 'Done']);
             $table->timestamps();
 
             $table->foreign('membership_id')->references('id')->on('membership')->onDelete('cascade')->onUpdate('cascade');
