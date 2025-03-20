@@ -2,7 +2,7 @@
 @if (session()->has('success'))
     <script>
         'use strict';
-        window.onload = function () {
+        window.onload = function() {
             Swal.fire({
                 icon: "success",
                 title: "Notification",
@@ -13,7 +13,7 @@
 @elseif (session()->has('error'))
     <script>
         'use strict';
-        window.onload = function () {
+        window.onload = function() {
             Swal.fire({
                 icon: "error",
                 title: "Notification",
@@ -59,11 +59,19 @@
                     </a>
                 </li>
                 <li class="pc-item">
-                    <a href="" class="pc-link">
+                    <a href="{{ route('membership.index') }}" class="pc-link">
                         <span class="pc-micon">
                             <i class="ti ti-users"></i>
                         </span>
                         <span class="pc-mtext">Memberships</span>
+                    </a>
+                </li>
+                <li class="pc-item">
+                    <a href="" class="pc-link">
+                        <span class="pc-micon">
+                            <i class="ti ti-building-warehouse"></i>
+                        </span>
+                        <span class="pc-mtext">Laundry Items</span>
                     </a>
                 </li>
                 <li class="pc-item">
@@ -349,8 +357,8 @@
                                 <li class="list-group-item">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
-                                            <img src="{{ asset('assets/images/user/avatar-2.jpg') }}" alt="user-image"
-                                                class="user-avtar avtar avtar-s" />
+                                            <img src="{{ asset('assets/images/user/avatar-2.jpg') }}"
+                                                alt="user-image" class="user-avtar avtar avtar-s" />
                                         </div>
                                         <div class="flex-grow-1 ms-3">
                                             <div class="d-flex">
@@ -409,7 +417,8 @@
                 <li class="dropdown pc-h-item header-user-profile">
                     <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
                         role="button" aria-haspopup="false" data-bs-auto-close="outside" aria-expanded="false">
-                        <img src="{{ asset('assets/images/user/avatar-2.jpg') }}" alt="user-image" class="user-avtar" />
+                        <img src="{{ asset('assets/images/user/avatar-2.jpg') }}" alt="user-image"
+                            class="user-avtar" />
                     </a>
                     <div class="dropdown-menu dropdown-user-profile dropdown-menu-end pc-h-dropdown">
                         <div class="dropdown-header d-flex align-items-center justify-content-between">
