@@ -67,7 +67,7 @@
                     </a>
                 </li>
                 <li class="pc-item">
-                    <a href="" class="pc-link">
+                    <a href="{{ route('laundry-item.index') }}" class="pc-link">
                         <span class="pc-micon">
                             <i class="ti ti-building-warehouse"></i>
                         </span>
@@ -258,8 +258,8 @@
                                     <p class="text-span">Today</p>
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
-                                            <img src="{{ asset('assets/images/user/avatar-2.jpg') }}" alt="user-image"
-                                                class="user-avtar avtar avtar-s" />
+                                            <img src="{{ asset('assets/images/user/avatar-2.jpg') }}"
+                                                alt="user-image" class="user-avtar avtar avtar-s" />
                                         </div>
                                         <div class="flex-grow-1 ms-3">
                                             <div class="d-flex">

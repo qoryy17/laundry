@@ -15,6 +15,8 @@ return new class extends Migration {
             $table->string('item_code');
             $table->text('item_name');
             $table->integer('price_weight');
+            $table->enum('active', ['1', '0']);
+            $table->integer('adding_by');
             $table->timestamps();
         });
     }

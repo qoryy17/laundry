@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\SigninController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\Laundry\LaundryItemController;
 use App\Http\Controllers\Membership\MembershipController;
 use App\Http\Controllers\User\UserController;
 use App\Livewire\Test;
@@ -37,3 +38,10 @@ Route::controller(MembershipController::class)->group(function () {
     Route::delete('/membership/{id}', 'destroy')->name('membership.destroy');
 });
 
+// Routing Laundry Items
+Route::controller(LaundryItemController::class)->group(function () {
+    Route::get('/laundry-item', 'index')->name('laundry-item.index');
+    Route::get('/laundry-item/form/{param}/{id}', 'form')->name('laundry-item.form');
+    Route::post('/laundry-item/store', 'store')->name('laundry-item.store');
+    Route::delete('/laundry-item/{id}', 'destroy')->name('laundry-item.destroy');
+});
