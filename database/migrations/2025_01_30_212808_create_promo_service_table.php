@@ -12,7 +12,7 @@ return new class extends Migration {
     {
         Schema::create('promo_service', function (Blueprint $table) {
             $table->id();
-            $table->string('promom_code')->unique();
+            $table->string('promo_code')->unique();
             $table->text('promo_name');
             $table->dateTime('promo_expired');
             $table->enum('promo_type', ['Discount', 'Free']);
