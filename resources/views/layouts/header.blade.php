@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/plugins/dataTables.bootstrap5.min.css') }}">
     <!-- [Tabler Icons] https://tablericons.com -->
     <link rel="stylesheet" href="{{ asset('assets/fonts/tabler-icons.min.css') }}">
+    <!-- Datepicker Plugin -->
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/datepicker-bs5.min.css') }}">
     <!-- [Feather Icons] https://feathericons.com -->
     <link rel="stylesheet" href="{{ asset('assets/fonts/feather.css') }}">
     <!-- [Font Awesome Icons] https://fontawesome.com/icons -->

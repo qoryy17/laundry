@@ -1,12 +1,13 @@
 <?php
 
-use App\Http\Controllers\Auth\SigninController;
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\Laundry\LaundryItemController;
-use App\Http\Controllers\Membership\MembershipController;
-use App\Http\Controllers\User\UserController;
 use App\Livewire\Test;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\User\UserController;
+use App\Http\Controllers\Auth\SigninController;
+use App\Http\Controllers\Promo\PromoServiceController;
+use App\Http\Controllers\Laundry\LaundryItemController;
+use App\Http\Controllers\Membership\MembershipController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -44,4 +45,13 @@ Route::controller(LaundryItemController::class)->group(function () {
     Route::get('/laundry-item/form/{param}/{id}', 'form')->name('laundry-item.form');
     Route::post('/laundry-item/store', 'store')->name('laundry-item.store');
     Route::delete('/laundry-item/{id}', 'destroy')->name('laundry-item.destroy');
+});
+
+
+// Routing Promo Service
+Route::controller(PromoServiceController::class)->group(function () {
+    Route::get('/promo-service', 'index')->name('promo-service.index');
+    Route::get('/promo-service/form/{param}/{id}', 'form')->name('promo-service.form');
+    Route::post('/promo-service/store', 'store')->name('promo-service.store');
+    Route::delete('/promo-service/{id}', 'destroy')->name('promo-service.destroy');
 });

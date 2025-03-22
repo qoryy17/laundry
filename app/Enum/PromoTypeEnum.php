@@ -4,6 +4,6 @@ namespace App\Enum;
 
 enum PromoTypeEnum: string
 {
-    case PROMO = 'Promo';
+    case FREE = 'Free';
     case DISCOUNT = 'Discount';
 }

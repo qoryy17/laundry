@@ -75,11 +75,11 @@
                     </a>
                 </li>
                 <li class="pc-item">
-                    <a href="" class="pc-link">
+                    <a href="{{ route('promo-service.index') }}" class="pc-link">
                         <span class="pc-micon">
                             <i class="ti ti-report-money"></i>
                         </span>
-                        <span class="pc-mtext">Promo</span>
+                        <span class="pc-mtext">Promo Service</span>
                     </a>
                 </li>
                 <li class="pc-item">

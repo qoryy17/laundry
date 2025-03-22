@@ -15,6 +15,7 @@
     preset_change("preset-5");
 </script>
 
+<script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
 <!-- tagify -->
 <script src="{{ asset('assets/js/plugins/choices.min.js') }}"></script>
 <script src="{{ asset('assets/js/plugins/sweetalert2.all.min.js') }}"></script>
