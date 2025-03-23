@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\User\UserController;
 use App\Http\Controllers\Auth\SigninController;
+use App\Http\Controllers\Payment\PaymentController;
 use App\Http\Controllers\Promo\PromoServiceController;
 use App\Http\Controllers\Laundry\LaundryItemController;
 use App\Http\Controllers\Membership\MembershipController;
@@ -47,11 +48,16 @@ Route::controller(LaundryItemController::class)->group(function () {
     Route::delete('/laundry-item/{id}', 'destroy')->name('laundry-item.destroy');
 });
 
-
 // Routing Promo Service
 Route::controller(PromoServiceController::class)->group(function () {
     Route::get('/promo-service', 'index')->name('promo-service.index');
     Route::get('/promo-service/form/{param}/{id}', 'form')->name('promo-service.form');
     Route::post('/promo-service/store', 'store')->name('promo-service.store');
     Route::delete('/promo-service/{id}', 'destroy')->name('promo-service.destroy');
+});
+
+// Routing Payment
+Route::controller(PaymentController::class)->group(function () {
+    Route::get('/payment', 'index')->name('payment.index');
+    Route::get('/payment/print-invoice', 'printInvoice')->name('payment.print-invoice');
 });
