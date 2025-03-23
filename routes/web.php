@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\User\UserController;
 use App\Http\Controllers\Auth\SigninController;
+use App\Http\Controllers\Report\ReportController;
 use App\Http\Controllers\Payment\PaymentController;
 use App\Http\Controllers\Promo\PromoServiceController;
 use App\Http\Controllers\Laundry\LaundryItemController;
@@ -60,4 +61,10 @@ Route::controller(PromoServiceController::class)->group(function () {
 Route::controller(PaymentController::class)->group(function () {
     Route::get('/payment', 'index')->name('payment.index');
     Route::get('/payment/print-invoice', 'printInvoice')->name('payment.print-invoice');
+});
+
+// Routing Report Transaction
+Route::controller(ReportController::class)->group(function () {
+    Route::get('/report-transaction', 'index')->name('report-transaction.index');
+    Route::get('/report-transaction/show-transaction', 'showTransaction')->name('report-transaction.show-transaction');
 });
