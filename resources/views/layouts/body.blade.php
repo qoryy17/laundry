@@ -111,11 +111,12 @@
                     <i class="ph-duotone ph-buildings"></i>
                 </li>
                 <li class="pc-item">
-                    <a href="" class="pc-link">
+                    <a href="{{ route('application.index') }}" class="pc-link">
                         <span class="pc-micon">
                             <i class="ti ti-settings"></i>
                         </span>
-                        <span class="pc-mtext">Application</span></a>
+                        <span class="pc-mtext">Application</span>
+                    </a>
                 </li>
             </ul>
             <div class="card nav-action-card bg-brand-color-4">
@@ -205,31 +206,30 @@
                     <div class="dropdown-menu dropdown-qta dropdown-menu-end pc-h-dropdown">
                         <div class="overflow-hidden">
                             <div class="qta-links m-n1">
-                                <a href="#!" class="dropdown-item">
-                                    <i class="ph-duotone ph-shopping-cart"></i>
-                                    <span>Transcation</span>
-                                </a>
-                                <a href="#!" class="dropdown-item">
+                                <a href="{{ route('payment.index') }}" class="dropdown-item">
                                     <i class="ph-duotone ph-scroll"></i>
-                                    <span>Invoice</span>
+                                    <span>Payment</span>
                                 </a>
-                                <a href="#!" class="dropdown-item">
+                                <a href="{{ route('report-transaction.index') }}" class="dropdown-item">
+                                    <i class="ph-duotone ph-shopping-cart"></i>
+                                    <span>Transaction</span>
+                                </a>
+                                <a href="{{ route('membership.index') }}" class="dropdown-item">
                                     <i class="ph-duotone ph-identification-badge"></i>
-                                    <span>Membership</span>
+                                    <span>Memberships</span>
                                 </a>
-                                <a href="#!" class="dropdown-item">
+                                <a href="{{ route('promo-service.index') }}" class="dropdown-item">
                                     <i class="ph-duotone ph-money"></i>
                                     <span>Promo</span>
                                 </a>
-                                <a href="#!" class="dropdown-item">
+                                <a href="{{ route('users.index') }}" class="dropdown-item">
                                     <i class="ph-duotone ph-user-circle"></i>
                                     <span>Users</span>
                                 </a>
-                                <a href="#!" class="dropdown-item">
+                                <a href="{{ route('application.index') }}" class="dropdown-item">
                                     <i class="ph-duotone ph-gear"></i>
-                                    <span>Settings</span>
+                                    <span>Setting</span>
                                 </a>
-
                             </div>
                         </div>
                     </div>

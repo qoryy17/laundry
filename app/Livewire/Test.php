@@ -13,8 +13,14 @@ class Test extends Component
         $this->count++;
     }
 
+
+    public function decrement()
+    {
+        $this->count--;
+    }
+
     public function render()
     {
-        return view('livewire.test', ['title' => 'ada'])->layout('layouts.body');
+        return view('livewire.test');
     }
 }

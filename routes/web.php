@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Application\ApplicationController;
 use App\Livewire\Test;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
@@ -67,4 +68,9 @@ Route::controller(PaymentController::class)->group(function () {
 Route::controller(ReportController::class)->group(function () {
     Route::get('/report-transaction', 'index')->name('report-transaction.index');
     Route::get('/report-transaction/show-transaction', 'showTransaction')->name('report-transaction.show-transaction');
+});
+
+// Routing Application
+Route::controller(ApplicationController::class)->group(function () {
+    Route::get('/application', 'index')->name('application.index');
 });
